@@ -1,0 +1,129 @@
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+}
+
+.all-movies {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 1rem;
+    align-items: center;
+    border-radius: 5px;
+}
+
+.homepage-movies {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 3rem;
+    justify-items: center;
+    width: 100%;
+}
+
+.all-movies h2 {
+    font-size: 3rem;
+}
+
+.homepage-movie {
+    display: flex;
+    flex-direction: column;
+    width: 15rem;
+    position: relative;
+    gap: 1rem;
+    box-shadow: rgba(177, 177, 177, 0.2) 0px 2px 8px 0px;
+    border-radius: 8px; /* Rounded corners */
+    padding: 1rem; /* Adds spacing inside the element */
+    
+    backdrop-filter: blur(10px); /* Blurs the background behind the element */
+    -webkit-backdrop-filter: blur(10px); /* Safari support */
+    transition: box-shadow 0.3s ease, backdrop-filter 0.3s ease; /* Smooth transition */
+}
+
+
+.homepage-movie a {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 20rem;
+    width: 100%;
+    position: relative;
+}
+
+.homepage-movie img {
+    position: absolute;
+    width: inherit;
+    height: inherit;
+    top: 0;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.homepage-movie-meta {
+    display: flex;
+    flex-direction: column;
+}
+
+.homepage-movie-meta .movie-title {
+    width: inherit;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.homepage-movie-meta-title {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.all-movies-rating {
+    font-size: 1rem;
+    color: var(--black);
+    width: 2.5rem;
+    height: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.85rem;
+    font-weight: bold;
+    position: absolute;
+    bottom: 0px;
+    right: 10px;
+}
+
+@media (hover: hover) {
+    .trending-link a:hover {
+        transition: all ease-in-out 0.2s;
+    }
+    .trending-link a:hover {
+        opacity: 0.8;
+    }
+}
+
+@media (max-width: 1200px) {
+    .homepage-movies {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1rem;
+    }
+}
+
+@media (max-width: 1000px) {
+    .homepage-movies {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 800px) {
+    .homepage-movies {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 570px) {
+    .homepage-movies {
+        grid-template-columns: repeat(1, 1fr);
+        justify-items: center;
+    }
+}

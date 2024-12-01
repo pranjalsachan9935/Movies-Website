@@ -1,0 +1,52 @@
+
+
+.about {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 4rem;
+    margin: 0 auto;
+    max-width: 1000px;
+    width: 100%; /* Ensure it scales on smaller screens */
+    background-color: #000000; /* Subtle background for better readability */
+    border-radius: 8px; /* Rounded corners for a modern look */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Add depth with a subtle shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth animations */
+    margin-bottom: 10px;
+}
+
+.about:hover {
+    transform: scale(1.02); /* Slight scaling on hover for interaction */
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15); /* Darker shadow on hover */
+}
+
+.about h2 {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #7d7d7d; /* Darker text for better contrast */
+    text-align: center; /* Center-align heading */
+    margin-bottom: 1rem; /* Space between heading and content */
+}
+
+.about p {
+    font-size: 1rem;
+    line-height: 1.7; /* Improve readability with proper line height */
+    letter-spacing: 0.5px;
+    color: #a8a7a7; /* Softer text color for paragraphs */
+    text-align: justify; /* Align text for a cleaner look */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .about {
+        padding: 2rem;
+    }
+
+    .about h2 {
+        font-size: 2.5rem; /* Adjust heading size on smaller screens */
+    }
+
+    .about p {
+        font-size: 1.2rem; /* Adjust paragraph size on smaller screens */
+    }
+}
