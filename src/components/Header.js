@@ -117,7 +117,7 @@ const Header = ({
             </motion.ul>
           ) : null}
           <section className="nav-socials">
-            <a rel="noreferrer" target="_blank" href="https://ekaterine-mitagvaria.vercel.app/">
+            <a rel="noreferrer" target="_blank" href="https://movies-website-wine-gamma.vercel.app/">
               <img src={WebIcon} alt='Vercel icon' className='web-icon' />
             </a>
             <a rel="noreferrer" target="_blank" href="https://github.com/pranjalsachan9935">
