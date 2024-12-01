@@ -201,9 +201,10 @@ nav ul li button img {
   flex-direction: column;
   gap: 1rem;
   width: 20rem;
-  background-color: var(--light-grey);
+  background-color: transparent;
+  backdrop-filter: blur(10px);
   padding: 1rem;
-  border-radius: 10px;
+  border-radius: 8px;
   margin-top: 2%;
   list-style: none;
   gap: 1.5rem;
@@ -216,16 +217,27 @@ nav ul li button img {
   align-items: flex-start;
   height: 5rem;
   gap: 1rem;
-  width: 100%;
+  width: 288px;
+  border-radius: 8px;
+  padding: 10px;
+  box-shadow: rgba(182, 182, 182, 0.2) 0px 2px 8px 0px;
 }
 .search-results li a img {
   object-fit: cover;
-  height: 5rem;
+  height: 60px;
+  border-radius: 5px;
+  
 }
 .search-results li a h3 {
-  font-size: 1rem;
+  font-size: 0.89rem;
   font-weight: 400;
 }
+
+.search-results li a p {
+  font-size: 0.89rem;
+  font-weight: 400;
+}
+
 .nav-socials {
   display: flex;
   flex-direction: row;
@@ -317,6 +329,32 @@ nav ul li button img {
   .search-btn {
     right: 28px;
     z-index: 3;
+  }
+  .search-results {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 18.8rem;
+    background-color: transparent;
+    backdrop-filter: blur(10px);
+    padding: 1rem;
+    border-radius: 8px;
+    margin-top: 2%;
+    list-style: none;
+    gap: 1.5rem;
+    position: absolute;
+    z-index: 999;
+  }
+  .search-results li a {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    height: 5rem;
+    gap: 1rem;
+    width: 269px;
+    border-radius: 8px;
+    padding: 10px;
+    box-shadow: rgba(182, 182, 182, 0.2) 0px 2px 8px 0px;
   }
 
   .header-actions {
