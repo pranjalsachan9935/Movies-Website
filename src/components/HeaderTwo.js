@@ -42,7 +42,7 @@ const HeaderTwo = ({
       )}
       <h1 className='movie-logo-name'>
         <Link to="/">
-          Movie<span>hub</span>
+          Movie Adda
         </Link>
       </h1>
       <section className='header-actions'>
